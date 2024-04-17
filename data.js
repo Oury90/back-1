@@ -1,0 +1,96 @@
+
+const dataCountry = [
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Alberta_in_Canada_2.svg/1920px-Alberta_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Alberta.svg/2880px-Flag_of_Alberta.svg.png",
+        "name": "Alberta",
+        "description": "L'Alberta est une province de l'Ouest du Canada. Ses paysages variés englobent des montagnes, des prairies, des plaines désertiques et de vastes forêts de conifères. Elle comprend plus de 600 lacs et de riches dépôts de minéraux. À l'ouest, les parcs des montagnes Rocheuses canadiennes comprennent des glaciers dans le champ de glace Columbia. Le parc international de la paix Waterton-Glacier est une réserve de biosphère qui longe la frontière sud avec les États-Unis.",
+        "capitale" : "Edmonton",
+        "population": "4,371 millions",
+        "superficie": "661 848 km²",
+        "code": "AB",
+        "pm": "Danielle Smith",
+        "infoCap": "https://fr.wikipedia.org/wiki/Edmonton",
+        "infoPM": "https://fr.wikipedia.org/wiki/Danielle_Smith",
+    },
+    {
+        "carte":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Manitoba_in_Canada_2.svg/1920px-Manitoba_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Flag_of_Manitoba.svg/2880px-Flag_of_Manitoba.svg.png",
+        "name": "Manitoba",
+        "description": "Le Manitoba est une province canadienne bordée par l'Ontario à l'est et la Saskatchewan à l'ouest. Son paysage, composé de lacs, de rivières, de montagnes, de forêts et de prairies, s'étend de la toundra nord de l'Arctique à la baie d'Hudson dans les terres agricoles de l'est et du sud. De nombreuses étendues sauvages sont protégées dans plus de 80 parcs provinciaux, où la randonnée, le vélo, le canoë, le camping et la pêche sont des activités prisées. ",
+        "capitale": "Winnipeg",
+        "population": "1,369 million",
+        "superficie": " 647 797 km²",
+        "code": "MB",
+        "pm": "Wab Kinew",
+        "infoCap": "https://fr.wikipedia.org/wiki/Winnipeg",
+        "infoPM": "https://fr.wikipedia.org/wiki/Wab_Kinew",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Quebec_in_Canada_2.svg/1920px-Quebec_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_Quebec.svg/2560px-Flag_of_Quebec.svg.png",
+        "name": "Quebec",
+        "code": "QC",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/British_Columbia_in_Canada_2.svg/1920px-British_Columbia_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Flag_of_British_Columbia.svg/2560px-Flag_of_British_Columbia.svg.png",
+        "name": "Colombie-Britannique",
+        "code": "BC",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Prince_Edward_Island_in_Canada_%28special_marker%29_2.svg/1920px-Prince_Edward_Island_in_Canada_%28special_marker%29_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Flag_of_Prince_Edward_Island.svg/2560px-Flag_of_Prince_Edward_Island.svg.png",
+        "name": "Île-du-Prince-Édouard",
+        "code": "PE",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/New_Brunswick_in_Canada_2.svg/1920px-New_Brunswick_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_New_Brunswick.svg/2560px-Flag_of_New_Brunswick.svg.png",
+        "name": "Nouveau-Brunswick",
+        "code": "NB",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Nova_Scotia_in_Canada_2.svg/1920px-Nova_Scotia_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Nova_Scotia.svg/2880px-Flag_of_Nova_Scotia.svg.png",
+        "name": "Nouvelle-Écosse",
+        "code": "NS",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ontario_in_Canada_2.svg/1920px-Ontario_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Ontario.svg/2880px-Flag_of_Ontario.svg.png",
+        "name": "Ontario",
+        "code": "ON",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Saskatchewan_in_Canada_2.svg/1920px-Saskatchewan_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Flag_of_Saskatchewan.svg/2880px-Flag_of_Saskatchewan.svg.png",
+        "name": "Saskatchewan",
+        "code": "SK",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Newfoundland_and_Labrador_in_Canada_2.svg/1920px-Newfoundland_and_Labrador_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Flag_of_Newfoundland_and_Labrador.svg/2880px-Flag_of_Newfoundland_and_Labrador.svg.png",
+        "name": "Terre-Neuve-et-Labrador",
+        "code": "NL",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Nunavut_in_Canada_2.svg/1920px-Nunavut_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Flag_of_Nunavut.svg/2560px-Flag_of_Nunavut.svg.png",
+        "name": "Nunavut",
+        "code": "NU",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Northwest_Territories_in_Canada_2.svg/1920px-Northwest_Territories_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_the_Northwest_Territories.svg/2880px-Flag_of_the_Northwest_Territories.svg.png",
+        "name": "Territoires du Nord-Ouest",
+        "code": "NT",
+    },
+    {
+        "carte": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Yukon_in_Canada_2.svg/1920px-Yukon_in_Canada_2.svg.png",
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Flag_of_Yukon.svg/2880px-Flag_of_Yukon.svg.png",
+        "name": "Yukon",
+        "code": "YT",
+    }
+];
+export default dataCountry;

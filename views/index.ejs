@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="header">Provinces Of Canada</h1>
+
+    <form action="/post" method="post">
+        <div class="content-bnt">
+            <Button type="submit" value="alberta" name="choice">Alberta</Button>
+            <Button type="submit" value="manitoba" name="choice">Manitoba</Button>
+            <Button type="submit" value="quebec" name="choice">Quebec</Button>
+            <Button type="submit" value="colombie" name="choice">Colombie-Britannique</Button>
+            <Button type="submit" value="princeÉdouard" name="choice">Île-du-Prince-Édouard</Button>
+            <Button type="submit" value="nouveauBrunswick" name="choice">Nouveau-Brunswick</Button>
+            <Button type="submit" value="nouvelleÉcosse" name="choice">Nouvelle-Écosse</Button>
+            <Button type="submit" value="ontario" name="choice">Ontario</Button>
+            <Button type="submit" value="saskatchewan" name="choice">Saskatchewan</Button>
+            <Button type="submit" value="terreNeuveetLabrador" name="choice">Terre-Neuve-et-Labrador</Button>
+            <Button type="submit" value="nunavut" name="choice">Nunavut</Button>
+            <Button type="submit" value="territoiresduNordOuest" name="choice">Territoires du Nord-Ouest</Button>
+            <Button type="submit" value="yukon" name="choice">Yukon</Button>
+        </div>
+    </form>
+
+    <% if(locals.provinces){ %>
+        <div class="contain-info">
+            <img class="img1" src="<%= provinces.flag %>" alt="" width="200px">
+            <div class="more-info">
+                <h3><%= provinces.name %></h3>
+                <p>Description: <%= provinces.description %></p>
+                <p>Capitale: <a href="<%= provinces.infoCap %>"><%= provinces.capitale %></a></p>
+                <p>Population: <%= provinces.population %></p>
+                <p>Superficie: <%= provinces.superficie %></p>
+                <p>Code: <%= provinces.code %></p>
+                <p>PM :<a href="<%= provinces.infoPM %>"><%= provinces.pm %></a></p>
+            </div>
+            <img class="img2" src="<%= provinces.carte %>" alt="" width="200px">
+        </div>
+            
+    <% }else{ %>
+        <img class="c-flag flag" src="images/canada.png" alt="" width="300px">
+        <p class="dir">Select the province 👆</p>
+    <% } %>
+
+    <script>
+        
+    </script>
+</body>
+</html>
